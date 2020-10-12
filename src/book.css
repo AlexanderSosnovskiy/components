@@ -1,7 +1,15 @@
 .book-list {
+  width: 90vw;
+  max-width: 1170px;
   display: grid;
-  grid-template-columns: repeat(3, auto);
-  padding: 15px;
+  gap: 2rem;
+  margin: 3rem auto;
+}
+
+@media screen and (min-width: 768px) {
+  .book-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .book-list-title {
@@ -9,19 +17,33 @@
   text-align: center;
 }
 
-.book-card {
+.book {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 1rem;
+  border-radius: .5rem;
+  background: #ffffff;
 }
 
-.book-card-cover {
-  padding: 15px;
+.book-cover {
+  border-radius: 1rem;
+  filter: grayscale(1);
 }
 
-.book-card-title {
-  max-width: 230px;
+.book-cover:hover {
+  filter: grayscale(0);
+  transition: .7s;
+}
+
+.book-title {
+  max-width: 200px;
+  padding-top: .5rem;
   white-space: nowrap; 
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.book-author {
+  color: #0066c0;
 }

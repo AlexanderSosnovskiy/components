@@ -37,6 +37,42 @@ const loveYouToMoonAndBack = {
   },
 }
 
+const ifAnimalsKissedGoodNight = {
+  title: 'If Animals Kissed Good Night',
+  author: 'Ann Whitford Paul',
+  type: 'board book',
+  price: '$4.79',
+  img: {
+    url:
+      'https://images-na.ssl-images-amazon.com/images/I/817T4J3dzhL._AC_UL200_SR200,200_.jpg',
+    alt: 'If Animals Kissed Good Night',
+  },
+}
+
+const littleBlueTruck = {
+  title: `Little Blue Truck's Halloween`,
+  author: 'Alice Schertle',
+  type: 'board book',
+  price: '$8.64',
+  img: {
+    url:
+      'https:images-na.ssl-images-amazon.com/images/I/51qNkKlcbnL._AC_UL200_SR200,200_.jpg',
+    alt: `Little Blue Truck's Halloween`,
+  },
+}
+
+const llamaLovesCamping = {
+  title: 'Llama Llama Loves Camping',
+  author: 'Anna Dewdney',
+  type: 'paperback',
+  price: '$1.51',
+  img: {
+    url:
+      'https:images-na.ssl-images-amazon.com/images/I/91M4Eew0juL._AC_UL200_SR200,200_.jpg',
+    alt: 'Llama Llama Loves Camping',
+  },
+}
+
 function BookList() {
   return (
     <section className='book-list'>
@@ -44,6 +80,9 @@ function BookList() {
       <Book book={catchMermaid} />
       <Book book={wonkyDonkey} />
       <Book book={loveYouToMoonAndBack} />
+      <Book book={ifAnimalsKissedGoodNight} />
+      <Book book={littleBlueTruck} />
+      <Book book={llamaLovesCamping} />
     </section>
   )
 }
