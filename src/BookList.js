@@ -15,7 +15,7 @@ const catchMermaid = {
 
 const wonkyDonkey = {
   title: 'The Wonky Donkey',
-  authour: 'Craig Smith',
+  author: 'Craig Smith',
   type: 'handcover',
   price: '$1.82',
   img: {
@@ -27,7 +27,7 @@ const wonkyDonkey = {
 
 const loveYouToMoonAndBack = {
   title: 'I Love you to the Moon and back',
-  authour: 'Amelia Hepworth',
+  author: 'Amelia Hepworth',
   type: 'handcover',
   price: '$0.99',
   img: {
@@ -39,8 +39,8 @@ const loveYouToMoonAndBack = {
 
 function BookList() {
   return (
-    <section>
-      <h1>this is a list of books</h1>
+    <section className='book-list'>
+      <h1 className='book-list-title'>Best Sellers in Books</h1>
       <Book book={catchMermaid} />
       <Book book={wonkyDonkey} />
       <Book book={loveYouToMoonAndBack} />

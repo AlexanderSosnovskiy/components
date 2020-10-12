@@ -1,0 +1,27 @@
+.book-list {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  padding: 15px;
+}
+
+.book-list-title {
+  grid-column: span 3;
+  text-align: center;
+}
+
+.book-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.book-card-cover {
+  padding: 15px;
+}
+
+.book-card-title {
+  max-width: 230px;
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
