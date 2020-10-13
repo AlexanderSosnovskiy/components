@@ -3,17 +3,18 @@ import React from 'react'
 import './book.css'
 
 function Book(props) {
+  const {book} = props
   return (
     <article className='book'>
       <img
         className='book-cover'
-        src={props.book.img.url}
-        alt={props.book.img.alt}
+        src={book.img.url}
+        alt={book.img.alt}
       />
-      <h4 className='book-title'>{props.book.title}</h4>
-      <h4 className='book-author'>{props.book.author}</h4>
-      <p>{props.book.type}</p>
-      <p>{props.book.price}</p>
+      <h4 className='book-title'>{book.title}</h4>
+      <h4 className='book-author'>{book.author}</h4>
+      <p>{book.type}</p>
+      <p>{book.price}</p>
     </article>
   )
 }
