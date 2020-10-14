@@ -1,9 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import BookList from './BookList'
+import BookList from './components/BookList'
 
-import './index.css'
+import './components/common/base.css'
 
 ReactDOM.render(<BookList />, document.getElementById('root'))
-
-
